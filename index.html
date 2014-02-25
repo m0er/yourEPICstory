@@ -3,17 +3,88 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="chrome=1">
-	<title>EPIC</title>
-	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
-	<link rel="stylesheet" href="stylesheets/styles.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>당신의 '에픽' 이야기</title>
+	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="stylesheets/simpletextrotator.css">
+	<!-- <link rel="stylesheet" href="stylesheets/styles.css"> -->
+	<style type="text/css">
+		.jumbotron {
+			background-color: white;
+			font-family: "Apple SD Gothic Neo", sans-serif;
+		}
+		.jumbotron header {
+			margin-top: 120px;
+		}
+		.jumbotron header > div {
+			padding: 0;
+		}
+		.jumbotron .rotate-prefix {
+			text-align: right;
+			margin-right: -0.2em;
+		}
+		.jumbotron .rotate-epic {
+			text-align: center;
+		}
+		.jumbotron .rotate-suffix {
+			text-align: left;
+			margin-left: -0.2em;
+		}
+		#content {
+			text-align: center;
+		}
+		#content h1 {
+			margin-top: 0;
+		}
+	</style>
+	
 </head>
 <body>
-	<div class="container">
-		<h1>yourEPICstory</h1>
+	<div class="jumbotron">
+		<div class="container">
+			<header class="row">
+				<div class="col-md-3"></div>
+				<div class="col-md-2">
+					<h1 class="rotate-prefix">당신의,우리의</h1>
+				</div>
+				<div class="col-md-2">
+					<h1 class="rotate-epic">에픽,EPIC,놀라운,따뜻한</h1>
+				</div>
+				<div class="col-md-2">
+					<h1 class="rotate-suffix">이야기,서사시</h1>
+				</div>
+				<div class="col-md-3"></div>
+			</header>
+			<section id="content">
+				<h1><a href="demo.html" class="rotate-demo">데모,DEMO</a></h1>
+			</section>
+		</div>
 	</div>
 
 	<script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
-	<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+	<script src="javascripts/jquery.simple-text-rotator.min.js"></script>
+	<script type="text/javascript">
+		$('.rotate-prefix').textrotator({
+			animation: 'flip',
+			seperator: ',',
+			speed: 5200
+		});
+		$('.rotate-epic').textrotator({
+			animation: 'flipUp',
+			seperator: ',',
+			speed: 7000
+		});
+		$('.rotate-suffix').textrotator({
+			animation: 'flip',
+			seperator: ',',
+			speed: 5600
+		});
+		$('.rotate-demo').textrotator({
+			animation: 'flipCube',
+			seperator: ',',
+			speed: 8900
+		});
+	</script>
 </body>
 </html>
