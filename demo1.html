@@ -12,6 +12,10 @@
 		body {
 			font-family: "Apple SD Gothic Neo", sans-serif;
 		}
+
+		#demo1 {
+			visibility: hidden;
+		}
 		
 		.jumbotron {
 			padding: 10%;
@@ -91,18 +95,18 @@
 	<script src="javascripts/Vague.js"></script>
 	<script type="text/javascript">
 		$(function() {
-			var BV = new $.BigVideo(),
-				ended = false;
+			var BV = new $.BigVideo();
 		    BV.init();
 		    BV.show('resources/ipad-anthem60-kr-20140128_848x480.mp4');
 
-		    BV.getPlayer().on('ended', function() {
-		    	if (ended == false) {
-		    		ended = true;
+		    BV.getPlayer()
+		    	.one('resize', function() {
+		    		$('#demo1').css('visibility', 'visible');
+		    	})
+		    	.one('ended', function() {
 			    	BV.show('resources/ipad-anthem60-kr-20140128_848x480.mp4', {ambient:true});
-			    	$('.carousel').carousel(0).carousel('pause');
-		    	}		    	
-		    });
+			    	$('.carousel').removeAttr('data-ride').removeAttr('data-interval').carousel('pause').carousel(0);
+		    	});
 
 		    var Vague = $('#big-video-wrap').Vague({
 			    intensity: 2,      // Blur Intensity
