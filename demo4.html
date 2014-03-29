@@ -8,13 +8,20 @@
 	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">	
 	<link rel="stylesheet" href="stylesheets/jquery.vegas.css">
 	<style type="text/css">
+		html, body {
+			height: 100%;
+		}
+
 		body {
 			font-family: "Apple SD Gothic Neo", sans-serif;
+			width: 801%;
 		}
 		
 		.jumbotron {
 			padding: 10%;
 			background: none;
+			position: fixed;
+			top: 0;
 		}
 
 		.carousel-control.left,
@@ -40,66 +47,120 @@
 			min-height: 300px;
 			max-width: 60%;
 		}
+
+		.parallax {
+			background-size: cover;
+			background-attachment: fixed;
+			background-repeat: no-repeat;
+			height: 100%;
+			width: 1240px;
+			display: inline-block;
+			margin-right: -4px;
+		}
+
+		.navbar-scrollspy {
+			display: none;
+		}
+
+		#story1 {
+			background-image: url('resources/hero.jpg');
+		}
+
+		#story2 {
+			background-image: url('resources/expedition_hero.jpg');
+		}
+
+		#story3 {
+			background-image: url('resources/newdepths_hero.jpg');
+		}
+
+		#story4 {
+			background-image: url('resources/bollywood_hero_2x.jpg');
+		}
+
+		#story5 {
+			background-image: url('resources/studio_hero_2x.jpg');
+		}
+
+		#story6 {
+			background-image: url('resources/schoolinbox_hero_2x.jpg');
+		}
+
+		#story7 {
+			background-image: url('resources/sportshealth_hero_2x.jpg');
+		}
+
+		#story8 {
+			background-image: url('resources/filmmaker_hero_2x.jpg');
+		}
 	</style>
 	
 </head>
-<body id="demo2">
+<body id="demo4">
+	<div id="story1" class="parallax" data-stellar-background-ratio="0.5"></div>
+	<div id="story2" class="parallax" data-stellar-background-ratio="0.5"></div>
+	<div id="story3" class="parallax" data-stellar-background-ratio="0.5"></div>
+	<div id="story4" class="parallax" data-stellar-background-ratio="0.5"></div>
+	<div id="story5" class="parallax" data-stellar-background-ratio="0.5"></div>
+	<div id="story6" class="parallax" data-stellar-background-ratio="0.5"></div>
+	<div id="story7" class="parallax" data-stellar-background-ratio="0.5"></div>
+	<div id="story8" class="parallax" data-stellar-background-ratio="0.5"></div>
+
 	<div class="jumbotron">
 		<div class="blur-background">					
 		</div>
 		<section id="yourEpicStory" class="carousel slide">
-			<!-- Wrapper for slides -->
 			<div class="carousel-inner">
-				<div class="item active">
+				<div class="item active" data-story="#story1">
 					<article>
 						<h1>당신의 한 줄은 무엇이 될까요?</h1>
 						<p>모두 저마다 세상과 나누고 싶은 것이 있습니다. 자신만의 목소리, 자신만의 열정, 자신만의 시각... 그런 나눔을 통해 세상이란 거대한 이야기에 자기만의 독특한 한 구절을 더합니다. 그렇게 사람들이 매일의 삶 속에서 iPad를 활용하는 모습에 우리는 깊이 감동받았습니다. 그래서 그 놀라운 순간들을 기록하기로 했죠.</p>
 					</article>
 				</div>
 
-				<div class="item">
+				<div class="item" data-story="#story2">
 					<article>
 						<h2>높이가 다른 등반.</h2>
 						<p>에밀리 해링턴과 에이드리언 밸린저는 에베레스트와 몽블랑을 비롯한 세계 유수의 준봉을 정복한 정상급 산악인입니다. 이 둘은 iPad와 Gaia GPS 앱을 이용해 등반 루트를 짜고, 안전하게 정상을 정복합니다. 그리고 자신들의 등반기를 전 세계와 공유하죠.</p>
 					</article>
 				</div>
 
-				<div class="item">
+				<div class="item" data-story="#story3">
 					<article>
 						<h2>새로운 깊이를 만나다.</h2>
 						<p>바다는 지구 표면의 71%를 이루고 있지만, 아직은 대부분이 인간의 손길이 닿지 않은 미스터리로 남아 있습니다. iDive 하우징 덕분에 해양생물학자 마이클 베루먼은 산호초 보호를 위한 연구를 한 단계 더 발전시킬 수 있었죠. 이젠 iPad를 저 깊은 바닷속까지 가져갈 수 있기 때문입니다.</p>
 					</article>
 				</div>
 
-				<div class="item">
+				<div class="item" data-story="#story4">
 					<article>
 						<h2>발리우드의 비전을 담아내다. <small>페로즈 칸(인도 아그라)</small></h2>
 						<p>발리우드 정상급 안무가인 페로즈 칸은 촬영 장소 답사, 음악 믹싱, 화면 구도 설정, 안무 세부 조정 등 프로덕션의 여러 단계에 걸쳐 iPad를 매우 다양하게 활용합니다. iPad 덕분에 감독, 무용수들, 제작팀에게 자신이 그리는 비전을 손쉽고 빠르게 공유할 수 있죠.</p>
 					</article>
 				</div>
 
-				<div class="item">
+				<div class="item" data-story="#story5">
 					<article>
 						<h2>창작의 열정을 고스란히 무대 위로. <small>야오(중국 북경)</small></h2>
 						<p>작곡과 녹음에 iPad를 사용하는 록 밴드 ‘야오’. 라이브 공연 무대에서도 iPad와 함께 합니다. 두 명의 뮤지션이 각자의 iPad로 Propellerhead가 만든 Figure, TouchOSC같은 앱을 타악기로 연주합니다. iPad 덕분에 야오는 음악을 새롭게 만드는 법과 새롭게 연주하는 법, 게다가 새로운 사운드도 찾을 수 있었죠.</p>
 					</article>
 				</div>
 
-				<div class="item">
+				<div class="item" data-story="#story6">
 					<article>
 						<h2>구석구석 배움을 전달하다. <small>School in a Box(네팔 훔라)</small></h2>
 						<p>개발도상국에 살고 있는 수천만 명의 어린이들은 전기 부족으로 인해 교육용 전자 기기를 사용할 기회가 거의 없습니다. 하지만 태양광으로 작동하는 iPad를 위해 만들어진 교육 키트인 School in a Box 로 인해 이제 어떤 곳에서도 알찬 인터랙티브 학습이 가능해졌습니다.</p>
 					</article>
 				</div>
 
-				<div class="item">
+				<div class="item" data-story="#story7">
 					<article>
 						<h2>머리를 보호하는 자, 승리하리라. <small>클리블랜드 클리닉 스포츠 건강과(오하이오주 클리블랜드)</small></h2>
 						<p>오하이오주에 위치한 클리블랜드 클리닉에선 뇌진탕에 대한 진단 및 치료 분야의 획기적 개선을 위해 iPad를 사용합니다. 현재 시범 프로그램이 진행 중인 세인트 에드워드 고교의 운동부 코치인 제이슨 크룩생크는 iComet에서 나온 소프트웨어와 iPad를 이용해 선수들의 균형, 인식, 기억에 대한 기준치를 측정합니다. 이 혁신적인 프로그램은 선수가 부상을 당했을 때 부상 정도를 판단하는 데 매우 유용하게 사용되죠.</p>
 					</article>
 				</div>
 
-				<div class="item">
+				<div class="item" data-story="#story8">
 					<article>
 						<h2>진정한 의미의 현장 제작. <small>조쉬 앱터(아르헨티나 이과수 폭포)</small></h2>
 						<p>뉴욕에서 활동 중인 영화 제작자 조쉬 앱터는 특수 하우징을 개발해 iPad를 가볍고 휴대가 간편한 영화 촬영용 카메라로 탈바꿈 시켰습니다. 이렇게 마이크, SLR 렌즈, 기타 액세서리를 장착할 수 있기 때문에 그는 iPad를 다큐멘터리 현장 촬영에 활용할 수 있게 되었습니다.</p>
@@ -107,7 +168,6 @@
 				</div>
 			</div>
 
-			<!-- Controls -->
 			<a class="left carousel-control" href="#yourEpicStory" data-slide="prev">
 				<span class="glyphicon glyphicon-chevron-left"></span>
 			</a>
@@ -117,45 +177,75 @@
 		</section>
 	</div>
 
+	<div class="navbar-scrollspy">
+		<ul class="nav nav-tabs">
+			<li><a href="#story1"></a></li>
+			<li><a href="#story2"></a></li>
+			<li><a href="#story3"></a></li>
+			<li><a href="#story4"></a></li>
+			<li><a href="#story5"></a></li>
+			<li><a href="#story6"></a></li>
+			<li><a href="#story7"></a></li>
+			<li><a href="#story8"></a></li>
+		</ul>
+	</div>
+
 	<script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
 	<script src="https://code.jquery.com/ui/1.10.4/jquery-ui.min.js"></script>
 	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 	<script src="javascripts/EventEmitter.min.js"></script>
 	<script src="javascripts/eventie.js"></script>
 	<script src="javascripts/imagesloaded.js"></script>
-	<script src="javascripts/jquery.vegas.min.js"></script>
-	<script src="javascripts/jquery.center.js"></script>
+	<script src="javascripts/jquery.stellar.js"></script>
+	<script src="javascripts/smooth-scroll.js"></script>	
 	<script type="text/javascript">
+		smoothScroll.init();
+
 		$(function() {
-			$.vegas('slideshow', {
-				backgrounds: [
-					{src: "resources/hero.jpg"},
-					{src: "resources/expedition_hero.jpg", fade: 1000},
-					{src: "resources/newdepths_hero.jpg", fade: 1000},
-					{src: "resources/bollywood_hero_2x.jpg", fade: 1000},
-					{src: "resources/studio_hero_2x.jpg", fade: 1000},
-					{src: "resources/schoolinbox_hero_2x.jpg", fade: 1000},
-					{src: "resources/sportshealth_hero_2x.jpg", fade: 1000},
-					{src: "resources/filmmaker_hero_2x.jpg", fade: 1000}
-				],
-				preload: true
-			});
-			$.vegas('pause');
+			var storyBackgroundWidth = 1240,
+				prevScrollSpyIndex = 0,
+				$scrollspies = $('.navbar-scrollspy li');
+
 			$('.carousel').carousel('pause');
 
+			$.stellar({
+				horizontalScrolling: true,
+				verticalScrolling: false,
+				responsive: true,
+				parallaxElements: false,
+			});
+
+			$(window).scroll(function(e) {
+				var index = parseInt($(window).scrollLeft() / 1240),
+					$newScrollSpy = $scrollspies.eq(index);
+					
+				if ($newScrollSpy.hasClass('active') == false) {
+					$scrollspies.eq(prevScrollSpyIndex).removeClass('active');
+					$newScrollSpy.addClass('active');
+					prevScrollSpyIndex = index;
+					$scrollspies.trigger('activate.bs.scrollspy');
+				}
+			});
+
+			$('.navbar-scrollspy').on('activate.bs.scrollspy', function() {
+				var index = $('.navbar-scrollspy li').index($('.navbar-scrollspy li.active'));
+				$('.carousel').carousel(index);
+			});
+
 			$('.left').click(function(e) {
-				$.vegas('previous');
+				var prevStory = $('#yourEpicStory .active').prev().attr('data-story');
+				if (prevStory == null)
+					prevStory = $('#yourEpicStory .item').last().attr('data-story');
+				
+				$('html, body').animate({scrollLeft: $(prevStory).offset().left}, 300);
 			});
 
 			$('.right').click(function(e) {
-				$.vegas('next');
-			});
+				var nextStory = $('#yourEpicStory .active').next().attr('data-story');
+				if (nextStory == null)
+					nextStory = $('#yourEpicStory .item').first().attr('data-story');
 
-			var $firstArticle = $('#yourEpicStory .item article').first(),
-				width = $firstArticle.width();
-
-			$('#yourEpicStory .item article').each(function() {
-				$(this).css('width', width);
+				$('html, body').animate({scrollLeft: $(nextStory).offset().left}, 300);
 			});
 
 			$(window).keyup(function(e) {
@@ -164,7 +254,6 @@
 				else if (e.which == 37)
 					$('.left').click();
 			});
-			
 		});
 	</script>
 </body>
