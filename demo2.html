@@ -47,7 +47,7 @@
 	<div class="jumbotron">
 		<div class="blur-background">					
 		</div>
-		<section id="yourEpicStory" class="carousel slide">
+		<section id="yourEpicStory" class="carousel slide" data-interval="false">
 			<!-- Wrapper for slides -->
 			<div class="carousel-inner">
 				<div class="item active">
@@ -141,7 +141,6 @@
 				preload: true
 			});
 			$.vegas('pause');
-			$('.carousel').carousel('pause');
 
 			$('.left').click(function(e) {
 				$.vegas('previous');

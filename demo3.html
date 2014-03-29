@@ -105,7 +105,7 @@
 	<div class="jumbotron">
 		<div class="blur-background">					
 		</div>
-		<section id="yourEpicStory" class="carousel slide">
+		<section id="yourEpicStory" class="carousel slide" data-interval="false">
 			<div class="carousel-inner">
 				<div class="item active" data-story="#story1">
 					<article>
@@ -198,8 +198,6 @@
 		smoothScroll.init();
 
 		$(function() {
-			$('.carousel').carousel('pause');
-
 			$.stellar({
 				horizontalScrolling: false,
 				responsive: true,

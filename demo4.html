@@ -109,7 +109,7 @@
 	<div class="jumbotron">
 		<div class="blur-background">					
 		</div>
-		<section id="yourEpicStory" class="carousel slide">
+		<section id="yourEpicStory" class="carousel slide" data-interval="false">
 			<div class="carousel-inner">
 				<div class="item active" data-story="#story1">
 					<article>
@@ -206,8 +206,6 @@
 				prevScrollSpyIndex = 0,
 				$scrollspies = $('.navbar-scrollspy li');
 
-			$('.carousel').carousel('pause');
-
 			$.stellar({
 				horizontalScrolling: true,
 				verticalScrolling: false,
@@ -218,7 +216,7 @@
 			$(window).scroll(function(e) {
 				var index = parseInt($(window).scrollLeft() / 1240),
 					$newScrollSpy = $scrollspies.eq(index);
-					
+
 				if ($newScrollSpy.hasClass('active') == false) {
 					$scrollspies.eq(prevScrollSpyIndex).removeClass('active');
 					$newScrollSpy.addClass('active');
