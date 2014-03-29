@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>DEMO #yourEPICstory</title>
+	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+	<style type="text/css">
+		html, body, .container {
+			height: 100%;
+		}
+
+		body {
+			font-family: "Apple SD Gothic Neo", sans-serif;
+		}
+
+		#zoomViewport {
+			position: relative;
+		}
+
+		.transparency {
+			background-color: rgba(255, 0, 0, 0);
+		}
+
+	</style>
+	
+</head>
+<body id="demo">
+	<div class="container">
+		<section id="zoomViewport">
+			<p id="textAmbient"></p>
+		</section>
+
+		<article>
+			
+		</article>
+	</div>
+
+	<script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+	<script src="javascripts/jquery.zoomooz.min.js"></script>
+	<script src="javascripts/Vague.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#textAmbient').zoomTo({
+				targetsize: 2,
+				duration: 600,
+				root: $('#zoomViewport')
+			});
+
+			var Vague = $('#zoomViewport').Vague({
+			    intensity: 1.6,      // Blur Intensity
+			    forceSVGUrl: false   // Force absolute path to the SVG filter
+			});
+
+			Vague.blur();
+		});		
+	</script>
+</body>
+</html>
