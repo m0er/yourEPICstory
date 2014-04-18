@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>세월호를 멀리서 지켜보며... #yourEPICstory</title>
+	<meta content="세월호를 멀리서 지켜보며... #yourEPICstory" property="og:title">
+	<meta content="세월호에서 떨고있을 생존자 구출을 위해 할 수 있는게 없는 답답함. 마음이라도 전달하고자.." property="og:description">
+	<meta content="http://i.dailymail.co.uk/i/pix/2014/04/16/article-2605734-1D2394AD00000578-696_964x628.jpg" property="og:image">
+	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">	
+	<link rel="stylesheet" href="stylesheets/jquery.vegas.css">
+	<style type="text/css">
+		body {
+			font-family: "Apple SD Gothic Neo", sans-serif;
+		}
+		
+		.jumbotron {
+			padding: 10%;
+			background: none;
+		}
+
+		.blur-background {
+			min-height: 300px;
+			position: absolute;
+			width: 60%;
+			-webkit-filter: blur(34px);
+			background-color: #fff;
+			z-index: 0;
+			opacity: 0.3;
+			left: 20%;
+			right: 20%;
+		}
+
+		#yourEpicStory .carousel-inner .item {
+			margin: 0 20%;
+			color: white;
+			min-height: 300px;
+			max-width: 60%;
+		}
+	</style>
+	
+</head>
+<body id="forSewol">
+	<div class="jumbotron">
+		<div class="blur-background">				
+		</div>
+		<section id="yourEpicStory">			
+		</section>
+	</div>
+
+	<script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.10.4/jquery-ui.min.js"></script>
+	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+	<script src="javascripts/EventEmitter.min.js"></script>
+	<script src="javascripts/eventie.js"></script>
+	<script src="javascripts/imagesloaded.js"></script>
+	<script src="javascripts/jquery.vegas.min.js"></script>
+	<script src="javascripts/jquery.center.js"></script>
+	<script type="text/javascript">
+		$(function() {
+			$.vegas('slideshow', {
+				backgrounds: [					
+					{src: "http://i.dailymail.co.uk/i/pix/2014/04/16/article-2605734-1D22CC6A00000578-231_964x616.jpg", fade: 1000},
+					{src: "http://i.dailymail.co.uk/i/pix/2014/04/16/article-2605734-1D2319E000000578-523_964x642.jpg", fade: 1000},
+					{src: "http://i.dailymail.co.uk/i/pix/2014/04/16/article-2605734-1D23626200000578-642_964x597.jpg", fade: 1000},
+					{src: "http://i.dailymail.co.uk/i/pix/2014/04/16/article-2605734-1D231DEC00000578-384_964x665.jpg", fade: 1000},
+					{src: "http://i.dailymail.co.uk/i/pix/2014/04/16/article-2605734-1D232E4700000578-288_964x535.jpg", fade: 1000},
+					{src: "http://i.dailymail.co.uk/i/pix/2014/04/16/article-2605734-1D232C0A00000578-103_964x521.jpg", fade: 1000},
+					{src: "http://i.dailymail.co.uk/i/pix/2014/04/16/article-2605734-1D24F93800000578-803_964x721.jpg", fade: 1000},
+					{src: "http://i.dailymail.co.uk/i/pix/2014/04/16/article-2605734-1D24136500000578-13_964x520.jpg", fade: 1000},
+					{src: "http://i.dailymail.co.uk/i/pix/2014/04/16/article-2605734-1D24F91800000578-586_964x606.jpg", fade: 1000},
+					{src: "http://i.dailymail.co.uk/i/pix/2014/04/16/article-2605734-1D23743100000578-91_964x695.jpg", fade: 1000},
+					{src: "http://i.dailymail.co.uk/i/pix/2014/04/16/article-2605734-1D23C59400000578-450_964x557.jpg", fade: 1000},
+					{src: "http://i.dailymail.co.uk/i/pix/2014/04/16/article-2605734-1D23E64D00000578-239_964x680.jpg", fade: 1000},
+					{src: "http://i.dailymail.co.uk/i/pix/2014/04/16/article-2605734-1D23E63C00000578-730_964x719.jpg", fade: 1000},
+					{src: "http://i.dailymail.co.uk/i/pix/2014/04/16/article-2605734-1D23E66C00000578-39_964x700.jpg", fade: 1000},
+					{src: "http://i.dailymail.co.uk/i/pix/2014/04/16/article-2605734-1D23E65D00000578-734_964x702.jpg", fade: 1000},
+					{src: "http://i.dailymail.co.uk/i/pix/2014/04/16/article-2605734-1D234FAB00000578-888_964x634.jpg", fade: 1000},
+					{src: "http://i.dailymail.co.uk/i/pix/2014/04/16/article-2605734-1D23625E00000578-313_964x535.jpg", fade: 1000},
+					{src: "http://i.dailymail.co.uk/i/pix/2014/04/16/article-2605734-1D2396C100000578-366_964x983.jpg", fade: 1000},
+					{src: "http://i.dailymail.co.uk/i/pix/2014/04/16/article-2605734-1D234C7F00000578-895_964x572.jpg", fade: 1000},
+					{src: "http://i.dailymail.co.uk/i/pix/2014/04/16/article-2605734-1D231CD400000578-929_964x695.jpg", fade: 1000},
+					{src: "http://i.dailymail.co.uk/i/pix/2014/04/16/article-2605734-1D25099B00000578-997_964x598.jpg", fade: 1000},
+					{src: "http://i.dailymail.co.uk/i/pix/2014/04/16/article-2605734-1D23796B00000578-692_964x541.jpg", fade: 1000},
+					{src: "http://i.dailymail.co.uk/i/pix/2014/04/16/article-2605734-1D24F8DB00000578-777_964x647.jpg", fade: 1000},
+					{src: "http://i.dailymail.co.uk/i/pix/2014/04/16/article-2605734-1D22FCF300000578-531_964x691.jpg", fade: 1000},
+					{src: "http://i.dailymail.co.uk/i/pix/2014/04/16/article-2605734-1D2301C800000578-328_964x593.jpg", fade: 1000},
+					{src: "http://i.dailymail.co.uk/i/pix/2014/04/16/article-2605734-1D2324BA00000578-846_964x643.jpg", fade: 1000},
+					{src: "http://i.dailymail.co.uk/i/pix/2014/04/16/article-2605734-1D24A1AD00000578-498_964x596.jpg", fade: 1000},
+					{src: "http://i.dailymail.co.uk/i/pix/2014/04/16/article-2605734-1D24B63100000578-332_964x639.jpg", fade: 1000},
+					{src: "http://i.dailymail.co.uk/i/pix/2014/04/16/article-2605734-1D24A42100000578-243_964x621.jpg", fade: 1000},
+					{src: "http://i.dailymail.co.uk/i/pix/2014/04/16/article-2605734-1D24AA8300000578-336_964x642.jpg", fade: 1000},
+					{src: "http://i.dailymail.co.uk/i/pix/2014/04/16/article-2605734-1D24B2A400000578-177_964x598.jpg", fade: 1000},
+					{src: "http://i.dailymail.co.uk/i/pix/2014/04/16/article-2605734-1D246AF400000578-840_964x632.jpg", fade: 1000},
+					{src: "http://i.dailymail.co.uk/i/pix/2014/04/16/article-2605734-1D246D8000000578-331_964x621.jpg", fade: 1000},
+					{src: "http://i.dailymail.co.uk/i/pix/2014/04/16/article-2605734-1D24A3CC00000578-875_964x646.jpg", fade: 1000},
+					{src: "http://i.dailymail.co.uk/i/pix/2014/04/16/article-2605734-1D249F7000000578-663_964x627.jpg", fade: 1000},
+					{src: "http://i.dailymail.co.uk/i/pix/2014/04/16/article-2605734-1D2470D200000578-77_964x599.jpg", fade: 1000},
+					{src: "http://i.dailymail.co.uk/i/pix/2014/04/16/article-2605734-1D24A97800000578-376_964x612.jpg", fade: 1000},
+					{src: "http://i.dailymail.co.uk/i/pix/2014/04/16/article-2605734-1D2520D600000578-5_964x668.jpg", fade: 1000},
+					{src: "http://i.dailymail.co.uk/i/pix/2014/04/16/article-2605734-1D25203E00000578-169_964x655.jpg", fade: 1000},
+					{src: "http://i.dailymail.co.uk/i/pix/2014/04/16/article-2605734-1D24B3A100000578-122_964x615.jpg", fade: 1000},
+					{src: "http://i.dailymail.co.uk/i/pix/2014/04/16/article-2605734-1D24B3CE00000578-479_964x629.jpg", fade: 1000},
+					{src: "http://i.dailymail.co.uk/i/pix/2014/04/16/article-2605734-1D24A47700000578-679_964x668.jpg", fade: 1000},
+					{src: "http://i.dailymail.co.uk/i/pix/2014/04/16/article-2605734-1D24A1EA00000578-823_964x664.jpg", fade: 1000},
+					{src: "http://i.dailymail.co.uk/i/pix/2014/04/16/article-2605734-1D24F78100000578-971_964x669.jpg", fade: 1000},
+					{src: "http://i.dailymail.co.uk/i/pix/2014/04/16/article-2605734-1D24F84200000578-740_964x629.jpg", fade: 1000},
+					{src: "http://i.dailymail.co.uk/i/pix/2014/04/16/article-2605734-1D2570F200000578-813_964x608.jpg", fade: 1000},
+					{src: "http://i.dailymail.co.uk/i/pix/2014/04/16/article-2605734-1D2570DA00000578-95_964x599.jpg", fade: 1000},
+					{src: "http://i.dailymail.co.uk/i/pix/2014/04/16/article-2605734-1D256D8D00000578-635_964x601.jpg", fade: 1000},
+					{src: "http://i.dailymail.co.uk/i/pix/2014/04/16/article-2605734-1D256F4E00000578-518_964x623.jpg", fade: 1000},
+					{src: "http://i.dailymail.co.uk/i/pix/2014/04/16/article-2605734-1D255C1900000578-390_964x871.jpg", fade: 1000},
+					{src: "http://i.dailymail.co.uk/i/pix/2014/04/16/article-2605734-1D247A0200000578-64_964x979.jpg", fade: 1000},
+					{src: "http://i.dailymail.co.uk/i/pix/2014/04/16/article-2605734-1D2472C600000578-466_964x654.jpg", fade: 1000},
+					{src: "http://i.dailymail.co.uk/i/pix/2014/04/16/article-2605734-1D247A9C00000578-261_964x617.jpg", fade: 1000},
+					{src: "http://i.dailymail.co.uk/i/pix/2014/04/16/article-2605734-1D234CEB00000578-693_964x783.jpg", fade: 1000},
+					{src: "http://i.dailymail.co.uk/i/pix/2014/04/16/article-2605734-1D23537100000578-181_964x696.jpg", fade: 1000},
+					{src: "http://i.dailymail.co.uk/i/pix/2014/04/16/article-2605734-1D23626600000578-415_964x662.jpg", fade: 1000},
+					{src: "http://i.dailymail.co.uk/i/pix/2014/04/16/article-2605734-1D23497A00000578-653_964x620.jpg", fade: 1000},
+					{src: "http://i.dailymail.co.uk/i/pix/2014/04/16/article-2605734-1D23784D00000578-737_964x631.jpg", fade: 1000},
+					{src: "http://i.dailymail.co.uk/i/pix/2014/04/16/article-2605734-1D23467E00000578-196_964x550.jpg", fade: 1000},
+					{src: "http://i.dailymail.co.uk/i/pix/2014/04/16/article-2605734-1D22F81300000578-652_964x632.jpg", fade: 1000},
+					{src: "http://i.dailymail.co.uk/i/pix/2014/04/16/article-2605734-1D22CC6600000578-131_964x563.jpg", fade: 1000},
+					{src: "http://i.dailymail.co.uk/i/pix/2014/04/16/article-2605734-1D234C0F00000578-961_964x890.jpg", fade: 1000},
+					{src: "http://i.dailymail.co.uk/i/pix/2014/04/16/article-2605734-1D2394AD00000578-696_964x628.jpg", fade: 1000},
+					{src: "http://i.dailymail.co.uk/i/pix/2014/04/16/article-2605734-1D239F1D00000578-415_964x690.jpg", fade: 1000},
+					{src: "http://i.dailymail.co.uk/i/pix/2014/04/16/article-2605734-1D24B2C800000578-200_964x626.jpg", fade: 1000},
+					{src: "http://i.dailymail.co.uk/i/pix/2014/04/16/article-2605734-1D239D4A00000578-793_964x642.jpg", fade: 1000},
+					{src: "http://i.dailymail.co.uk/i/pix/2014/04/16/article-2605734-1D238EBD00000578-630_964x660.jpg", fade: 1000},
+					{src: "http://i.dailymail.co.uk/i/pix/2014/04/16/article-2605734-1D233E3500000578-34_964x597.jpg", fade: 1000},
+					{src: "http://i.dailymail.co.uk/i/pix/2014/04/16/article-2605734-1D23410B00000578-933_964x686.jpg", fade: 1000},
+					{src: "http://i.dailymail.co.uk/i/pix/2014/04/16/article-2605734-1D238AFC00000578-297_964x618.jpg", fade: 1000},
+					{src: "http://i.dailymail.co.uk/i/pix/2014/04/16/article-2605734-1D233D8500000578-509_964x648.jpg", fade: 1000},
+					{src: "http://i.dailymail.co.uk/i/pix/2014/04/16/article-2605734-1D22C0D300000578-834_964x581.jpg", fade: 1000},
+					{src: "http://i.dailymail.co.uk/i/pix/2014/04/16/article-2605734-1D22CA6200000578-438_964x573.jpg", fade: 1000},
+					{src: "http://i.dailymail.co.uk/i/pix/2014/04/16/article-2605734-1D2324D300000578-763_964x643.jpg", fade: 1000},
+					{src: "http://i.dailymail.co.uk/i/pix/2014/04/16/article-2605734-1D2322F500000578-10_964x639.jpg", fade: 1000},
+					{src: "http://i.dailymail.co.uk/i/pix/2014/04/18/article-0-1D2C547D00000578-53_634x501.jpg", fade: 1000},
+					{src: "http://i.dailymail.co.uk/i/pix/2014/04/18/article-2607683-1D2DCA4800000578-233_634x418.jpg", fade: 1000},
+					{src: "http://i.dailymail.co.uk/i/pix/2014/04/18/article-0-1D2D057C00000578-920_634x301.jpg", fade: 1000},
+					{src: "http://i.dailymail.co.uk/i/pix/2014/04/18/article-2607683-1D2DD45F00000578-866_634x421.jpg", fade: 1000},
+					{src: "http://i.dailymail.co.uk/i/pix/2014/04/18/article-2607683-1D2DD41B00000578-717_634x396.jpg", fade: 1000},
+					{src: "http://i.dailymail.co.uk/i/pix/2014/04/18/article-2607683-1D2DDF6D00000578-227_634x373.jpg", fade: 1000},
+					{src: "http://i.dailymail.co.uk/i/pix/2014/04/18/article-2607683-1D2DBE5F00000578-371_634x407.jpg", fade: 1000},
+					{src: "http://i.dailymail.co.uk/i/pix/2014/04/18/article-2607683-1D2DCD8900000578-442_634x385.jpg", fade: 1000},
+					{src: "http://i.dailymail.co.uk/i/pix/2014/04/18/article-0-1D2B8CF100000578-683_634x431.jpg", fade: 1000},
+					{src: "http://i.dailymail.co.uk/i/pix/2014/04/18/article-2606764-1D2C339E00000578-116_634x476.jpg", fade: 1000},
+					{src: "http://i.dailymail.co.uk/i/pix/2014/04/18/article-2606764-1D2C338300000578-781_634x460.jpg", fade: 1000},
+					{src: "http://i.dailymail.co.uk/i/pix/2014/04/18/article-2606764-1D2C339A00000578-170_634x454.jpg", fade: 1000},
+					{src: "http://i.dailymail.co.uk/i/pix/2014/04/18/article-2606764-1D2C338E00000578-771_634x434.jpg", fade: 1000},
+					{src: "http://i.dailymail.co.uk/i/pix/2014/04/18/article-2606764-1D2C338A00000578-223_634x458.jpg", fade: 1000},
+					{src: "http://i.dailymail.co.uk/i/pix/2014/04/18/article-2606764-1D2C337E00000578-822_634x444.jpg", fade: 1000},
+					{src: "http://i.dailymail.co.uk/i/pix/2014/04/18/article-2606764-1D2C337600000578-450_634x286.jpg", fade: 1000},
+					{src: "http://i.dailymail.co.uk/i/pix/2014/04/18/article-urn:publicid:ap.org:1eab8dc129da4b1a9f5af3e409c351e9-6Ov0763vF-HSK1-305_634x422.jpg", fade: 1000},
+					{src: "http://i.dailymail.co.uk/i/pix/2014/04/18/article-urn:publicid:ap.org:1eab8dc129da4b1a9f5af3e409c351e9-6Ov03XbrvHSK2-661_634x932.jpg", fade: 1000},
+					{src: "http://i.dailymail.co.uk/i/pix/2014/04/18/article-urn:publicid:ap.org:1eab8dc129da4b1a9f5af3e409c351e9-6Ov07KfFO-HSK1-787_634x422.jpg", fade: 1000},
+					{src: "http://i.dailymail.co.uk/i/pix/2014/04/18/article-urn:publicid:ap.org:1eab8dc129da4b1a9f5af3e409c351e9-6Ov03mmTaHSK2-70_634x422.jpg", fade: 1000},
+					{src: "http://i.dailymail.co.uk/i/pix/2014/04/18/article-urn:publicid:ap.org:1eab8dc129da4b1a9f5af3e409c351e9-6Ov07dGlX-HSK1-266_634x422.jpg", fade: 1000},
+					{src: "http://i.dailymail.co.uk/i/pix/2014/04/18/article-urn:publicid:ap.org:1eab8dc129da4b1a9f5af3e409c351e9-6Ov04Ad5PHSK2-996_634x422.jpg", fade: 1000},
+					{src: "http://i.dailymail.co.uk/i/pix/2014/04/18/article-urn:publicid:ap.org:1eab8dc129da4b1a9f5af3e409c351e9-6Ov083nAw-HSK1-858_634x422.jpg", fade: 1000},
+					{src: "http://i.dailymail.co.uk/i/pix/2014/04/18/article-urn:publicid:ap.org:1eab8dc129da4b1a9f5af3e409c351e9-6Ov04XN4ZHSK2-581_634x395.jpg", fade: 1000},
+					{src: "http://i.dailymail.co.uk/i/pix/2014/04/18/article-urn:publicid:ap.org:1eab8dc129da4b1a9f5af3e409c351e9-6Ov08JlpO-HSK1-797_634x396.jpg", fade: 1000},
+					{src: "http://i.dailymail.co.uk/i/pix/2014/04/18/article-urn:publicid:ap.org:1eab8dc129da4b1a9f5af3e409c351e9-6Ov04ldo2HSK2-746_634x422.jpg", fade: 1000},
+					{src: "http://i.dailymail.co.uk/i/pix/2014/04/18/article-urn:publicid:ap.org:1eab8dc129da4b1a9f5af3e409c351e9-6Ov08bxre-HSK1-915_634x380.jpg", fade: 1000},
+					{src: "http://i.dailymail.co.uk/i/pix/2014/04/18/article-urn:publicid:ap.org:1eab8dc129da4b1a9f5af3e409c351e9-6Ov052eCcHSK2-575_634x344.jpg", fade: 1000}			
+				],
+				preload: true
+			});
+
+			$(window).keyup(function(e) {
+				if (e.which == 39)
+					$.vegas('next');
+				else if (e.which == 37)
+					$.vegas('previous');
+			});
+			
+		});
+	</script>
+</body>
+</html>
