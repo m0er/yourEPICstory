@@ -14,6 +14,12 @@
 		body {
 			font-family: "Apple SD Gothic Neo", sans-serif;
 		}
+
+		#share {
+			float: right;
+			margin-right: 120px;
+			margin-top: 20px;
+		}
 		
 		.jumbotron {
 			padding: 10%;
@@ -42,12 +48,17 @@
 	
 </head>
 <body id="forSewol">
-	<div class="jumbotron">
-		<div class="blur-background">				
-		</div>
-		<section id="yourEpicStory">			
-		</section>
-	</div>
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "http://connect.facebook.net/ko_KR/all.js#xfbml=1&appId=1435331360048062";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
+	<section id="share">
+		<div class="fb-share-button" data-href="http://ethdemor.github.io/yourEPICstory/for-sewol.html" data-type="button_count"></div>
+	</section>
 
 	<script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
 	<script src="https://code.jquery.com/ui/1.10.4/jquery-ui.min.js"></script>
